@@ -1,0 +1,36 @@
+#navbar {
+    padding: 1rem 3rem;
+    border-bottom: 2px solid var(--yellow);
+
+    .wrapper {
+        max-width: 1440px;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            max-width: 100px;
+            min-width: 100px;
+        }
+    
+        ul {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+    
+            li>a {
+                font-size: 1.3rem;
+                font-weight: bold;
+                transition: all .3s ease ;
+
+                &:hover {
+                    color: var(--yellow);
+                }
+                
+            }
+        }
+    }
+
+}

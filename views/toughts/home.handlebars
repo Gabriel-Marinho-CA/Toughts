@@ -1,0 +1,56 @@
+<div class="container-home">
+    
+    <div class="home-header">
+        {{#if search}}
+         <h1>Você está buscando por: <span>{{search}}</span></h1>
+
+            {{#if toughtsQty}}
+                <p class="res-user-search">Foram encontrados <span>{{toughtsQty}}</span> Pensamentos</p>
+            {{else}}
+                <p class="res-user-search">Nenhum pensamento foi encotrado para o termo <span>{{search}}</span></p>
+            {{/if}}
+
+        {{else}}
+         <h1>Conheça alguns dos nossos <span>Pensamentos</span>:</h1>
+        {{/if}}
+    
+        <form action="/" method="GET" class="form form-home-search">
+            <input type="text" name="search" placeholder="Está buscando por algo" id="">
+            <input type="submit" value="Buscar" class="btn">
+        </form>
+        <div class="order-container">
+            <span>Ordenar por:</span>
+    
+            <form action="/" method="GET">
+                <input type="hidden" name="search" value="{{this.search}}">
+                <input type="hidden" name="order" value ="new">
+                <button type="submit">
+                    <i class="bi bi-arrow-up"></i>
+                </button>
+            </form>
+    
+            <form action="/" method="GET">
+                <input type="hidden" name="search" value="{{this.search}}">
+                <input type="hidden" name="order" value ="old">
+                <button type="submit">
+                    <i class="bi bi-arrow-down"></i>
+                </button>
+            </form>
+            <a href="/"> Limpar</a>
+    
+        </div>
+    </div>
+    
+    <div class="toughuts-cointainer">
+        {{#each toughts}}
+            <figure>
+                <blockquote>
+                    "{{this.title}}"
+                </blockquote>
+                <figcaption>
+                    por <span>{{this.User.name}}</span>
+                </figcaption>
+            </figure>
+        {{/each}}
+    </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="wrapper-container toughts-form">
+    <a href="/toughts/dashboard">Voltar</a>
+    <h2>Editando pensamento:</h2>
+    <form action="/toughts/edit" method="POST" class="form">
+        <input type="hidden" name="id" value="{{tought.id}}">
+        <div class="form-control">
+            <label for="title">Pensamento:</label>
+            <input type="text" name="title" placeholder="Digite o seu pensamento..." id="" value="{{tought.title}}">
+        </div>
+        <div class="form-control">
+            <input type="submit" value="Editar Pensamento" class="btn">
+        </div>
+    </form>
+</div>

@@ -1,0 +1,47 @@
+.wrapper-container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+
+
+    h2 {
+        padding: 1rem 1rem;
+        margin: 2rem 0;
+        border-left: 3px solid var(--yellow);
+    }
+
+    .form-control {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            font-size: 1.3rem;
+            margin: 1.1rem 0 .7rem 0;
+            font-weight: bold;
+        }
+
+        input {
+            &:not(input[type="submit"]) {
+                border: 1px solid var(--yellow);
+                padding: .3rem;
+                background-color: #1d1d1b;
+                height: 40px;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    p {
+        font-weight: bold;
+
+        a {
+            color: var(--yellow);
+            transition: all .23s ease;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+

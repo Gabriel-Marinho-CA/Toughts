@@ -1,0 +1,51 @@
+@import './components/header';
+@import './components/footer';
+@import './components/home';
+@import './components/register_page';
+@import './components/toughts';
+@import './components/dashboard';
+// @import './variables/variables';
+
+
+:root {
+    --yellow: #c2c21b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #1d1d1b;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.message {
+    padding: 1rem;
+    color: #04305e;
+    text-align: center;
+    margin: 1.5rem auto;
+    border-radius: 5px;
+    border: 1px solid #a0d7df;
+    max-width: 60%;
+    background-color: #87b9c1;
+}

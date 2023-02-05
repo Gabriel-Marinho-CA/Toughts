@@ -1,0 +1,97 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 2rem 2rem;
+}
+
+.container-home {
+    max-width: 800px;
+    margin: 0 auto;
+
+    .home-header {
+        text-align: center;
+
+        h1>span,
+        p>span {
+            color: var(--yellow);
+        }
+        .res-user-search {
+            padding: 1.5rem 0;
+        }
+
+        .form-home-search {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+
+            input:not(input[type="submit"]) {
+                width: 100%;
+                background-color: transparent;
+                color: #fff;
+                border: none;
+                border-bottom: 1px solid #fff;
+                padding-bottom: .6rem;
+                padding-left: .5rem;
+                font-size: 1.3rem;
+
+                &::placeholder {
+                    color: #fff;
+                }
+            }
+        }
+
+        .order-container {
+            display: flex;
+            justify-content: center;
+            gap: 1.3rem;
+            margin: 1.34rem 0;
+
+            * {
+                font-weight: bold;
+                font-size: 1.35rem;
+
+                &:not(span) {
+                    transition: all .3s ease;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: var(--yellow);
+                    }
+                }
+            }
+
+            form {
+                button[type="submit"] {
+                    background: transparent;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .toughuts-cointainer {
+        margin-top: 4rem;
+
+        figure {
+            border-bottom: 1px solid #333;
+            padding: 0.5rem;
+            margin: 0 auto 1rem;
+
+            blockquote {
+                font-style: italic;
+                font-size: 2rem;
+                margin-bottom: .4rem;
+            }
+
+            figcaption {
+                font-weight: bold;
+                padding: .37rem 0;
+
+                span {
+                    color: var(--yellow);
+                }
+            }
+        }
+    }
+}
