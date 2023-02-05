@@ -4,5 +4,5 @@
 
 Project made for synthesize the knowledg of the following tecnologies:
 <p>-> MVC architecture</p>
--> CRUD using mysql, nodejs, nodejs express, nodejs sequelize, cookies, and session login. 
--> View part made with html,scss, handlebars
+<p>-> CRUD using mysql, nodejs, nodejs express, nodejs sequelize, cookies, and session login.</p> 
+<p>-> View part made with html,scss, handlebars. </p>
